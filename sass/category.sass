@@ -1,0 +1,40 @@
+@charset "utf-8"
+
+@import "variables.sass"
+
+@keyframes catlabelanimation
+	from
+		padding-right: 9px
+	to
+		padding-right: 50px
+
+.xiong-articlebox
+	display: block
+	background: $white
+	padding: 20px
+	margin: 10px 0px 25px 0px
+	position: relative
+	color: $black
+	h3
+		font-size: 24px
+		font-weight: 300
+	&:hover
+		opacity: 0.9
+	.cat-label
+		position: absolute
+		top: 10px
+		right: -10px
+		background: $brand1
+		padding: 9px
+		color: $black
+		font-family: $mainheadlinefont
+		font-size: 20px
+	&:hover .cat-label
+		background: $brand1
+		color: $black   
+		animation-name: catlabelanimation
+		animation-duration: 1s
+		animation-iteration-count: 1
+		animation-fill-mode: forwards
+
+
